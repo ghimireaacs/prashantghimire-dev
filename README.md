@@ -2,7 +2,7 @@
 
 Personal portfolio site built with [Hugo](https://gohugo.io), deployed on Netlify.
 
-Uses the [grain-resume](https://github.com/ghimireaacs/grain-resume) theme — a separate repo linked here as a git submodule.
+Uses the [grain-hugo-theme](https://github.com/ghimireaacs/grain-hugo-theme) theme — a separate repo linked here as a git submodule.
 
 ---
 
@@ -11,7 +11,7 @@ Uses the [grain-resume](https://github.com/ghimireaacs/grain-resume) theme — a
 | Repo | What it is |
 |---|---|
 | `prashantghimire-hugo` (this) | Site content — data files, config, Netlify config |
-| `grain-resume` | The Hugo theme — templates, CSS, JS |
+| `grain-hugo-theme` | The Hugo theme — templates, CSS, JS |
 
 **Why submodule and not Hugo modules?**
 Hugo modules require Go installed in the build environment and add `go.mod` complexity. For a single theme used on one site, a git submodule is simpler — Netlify supports it natively with one env variable.
@@ -24,8 +24,8 @@ Requires [Hugo](https://gohugo.io/installation/) (extended edition recommended).
 
 **First clone:**
 ```bash
-git clone --recurse-submodules https://github.com/ghimireaacs/prashantghimire-hugo
-cd prashantghimire-hugo
+git clone --recurse-submodules https://github.com/ghimireaacs/prashantghimire-dev.git
+cd prashantghimire-dev
 ```
 
 If you already cloned without `--recurse-submodules`:
