@@ -1,0 +1,14 @@
+- category: Windows & Desktop
+  skills: "Windows 10/11 · Windows Server · OS imaging · Hardware & printer support"
+
+- category: Microsoft Cloud
+  skills: "Microsoft 365 · Exchange Online · Azure AD / Entra · Intune / MDM · MFA · Conditional Access"
+
+- category: Active Directory
+  skills: "AD DS · DNS · DHCP · Group Policy · NTFS permissions · User & group management"
+
+- category: Networking
+  skills: "TCP/IP · VPN · RDP · Quick Assist · ping / tracert / nslookup"
+
+- category: Support Practice
+  skills: "ITIL fundamentals · Ticket management · SLA · Escalation · Documentation"

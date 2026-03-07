@@ -1,0 +1,3 @@
+[submodule "themes/grain-resume"]
+	path = themes/grain-resume
+	url = https://github.com/ghimireaacs/grain-hugo-theme.git

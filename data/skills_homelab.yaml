@@ -1,0 +1,14 @@
+- category: Infrastructure
+  skills: "Kubernetes (k3s) · Docker · Proxmox · Linux · NFS"
+
+- category: Networking
+  skills: "VLAN segmentation · OPNsense · Traefik · Pi-hole · Netbird · SSL/TLS"
+
+- category: Monitoring
+  skills: "Prometheus · Grafana · Loki · Alertmanager"
+
+- category: Automation
+  skills: "Terraform · Helm · PowerShell · Bash · GitOps"
+
+- category: Identity
+  skills: "Authentik SSO · OAuth2 / OIDC · TryHackMe — Jr. Pentester"
