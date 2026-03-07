@@ -13,5 +13,5 @@ disableKinds = ["taxonomy", "term"]
   linkedin   = "https://linkedin.com/in/prashant-ghimire"
   github     = "https://github.com/ghimireaacs"
   # avatar      = "/img/photo.jpg"        # optional — initials shown if omitted
-  description  = "IT Support Technician — Microsoft 365, Active Directory, Windows Server, Networking."
-  # ogImage    = "/img/og-preview.jpg"   # optional — 1200x630px, shown on LinkedIn/Twitter previews
+  description  = "IT Support Technician with hands on experience in Microsoft 365, Active Directory, Windows Server, Intune, and networking. Open to Level 1 and Level 2 roles."
+  ogImage    = "/img/og-preview.jpg"   # optional — 1200x630px, shown on LinkedIn/Twitter previews
