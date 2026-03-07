@@ -73,13 +73,16 @@ All content lives in `data/` and `hugo.toml` — no need to touch the theme.
 
 ## Updating the theme
 
-The theme is pinned to a specific commit. To pull in theme changes:
+The theme is pinned to a specific commit. Netlify will not pick up theme changes automatically — you need to update the pin manually:
 
 ```bash
 git submodule update --remote themes/grain-resume
 git add themes/grain-resume
 git commit -m "update theme"
+git push
 ```
+
+Netlify auto-deploys on that push.
 
 ---
 
