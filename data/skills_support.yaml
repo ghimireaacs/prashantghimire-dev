@@ -1,14 +1,23 @@
 - category: Windows & Desktop
-  skills: "Windows 10/11 · Windows Server · OS imaging · Hardware & printer support"
+  skills: "Windows 10/11 · Windows Server · OS imaging · Hardware & printer support · BSOD & driver troubleshooting · RDP · Remote Desktop · Quick Assist"
 
 - category: Microsoft Cloud
-  skills: "Microsoft 365 · Exchange Online · Azure AD / Entra · Intune / MDM · MFA · Conditional Access"
+  skills: "Microsoft 365 · Office 365 · Exchange Online · Azure AD / Entra · Intune / MDM · MFA · Conditional Access · Teams · SharePoint · OneDrive"
 
 - category: Active Directory
-  skills: "AD DS · DNS · DHCP · Group Policy · NTFS permissions · User & group management"
+  skills: "AD DS · DNS · DHCP · Group Policy (GPO) · NTFS permissions · User & group management · Onboarding & offboarding"
 
-- category: Networking
-  skills: "TCP/IP · VPN · RDP · Quick Assist · ping / tracert / nslookup"
+- category: Networking & Firewall
+  skills: "OPNsense firewall · VLAN design & 802.1Q trunking · Firewall rule sets · Inter-VLAN routing · RFC1918 blocking · IoT isolation · Pi-hole DNS · Cloudflare DNS · TCP/IP · VPN · Twingate zero-trust"
+
+- category: Linux & Remote Access
+  skills: "Ubuntu Server · SSH key authentication · NFS & Samba/CIFS · TLS/SSL certificates · Let's Encrypt · cloud-init · bash/zsh"
+
+- category: Virtualisation
+  skills: "Proxmox VE · VM provisioning & templates · Docker & Docker Compose · Kubernetes (K3s) · TrueNAS / ZFS"
+
+- category: PowerShell
+  skills: "User management scripts · Get-ADUser · Set-ADUser · Unlock-ADAccount · Basic automation"
 
 - category: Support Practice
-  skills: "ITIL fundamentals · Ticket management · SLA · Escalation · Documentation"
+  skills: "ITIL fundamentals · ServiceNow · Incident & request management · SLA · Escalation · Documentation"

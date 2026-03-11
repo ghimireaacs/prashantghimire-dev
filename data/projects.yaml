@@ -1,11 +1,19 @@
 - name: Network Infrastructure
-  description: "VLAN-segmented home network — OPNsense firewall, 802.1Q trunking, Pi-hole DNS. Separate VLANs for management, servers, IoT, trusted, and guest traffic. Mirrors enterprise design patterns."
-  tags: [OPNsense, VLANs, 802.1Q, Pi-hole]
+  description: "5-VLAN segmented home network running on OPNsense (Dell Wyse 3070) and a TP-Link TL-SG108E managed switch. Separate VLANs for servers, personal devices, tenants, IoT, and workstation — each with its own DHCP scope, gateway, and firewall policy. RFC1918 blocking keeps tenants and IoT isolated from the LAN. 802.1Q trunking carries all VLANs on a single uplink. Pi-hole handles local DNS filtering; Cloudflare manages the public domain with wildcard records pointing to the cluster LoadBalancer."
+  tags: [OPNsense, VLANs, 802.1Q, Firewall, Pi-hole, Cloudflare]
 
-- name: Self-Hosted Platform
-  description: "15+ services running on a 3-node k3s cluster. SSO via Authentik, Traefik reverse proxy, Terraform-managed infrastructure, valid SSL across everything on a custom domain."
-  tags: [k3s, Traefik, Authentik, Terraform, Helm]
+- name: Proxmox Hypervisor Cluster
+  description: "Two-node Proxmox VE cluster running 10+ VMs across a DIY homeserver (Ryzen 5 3600X, 32 GB RAM) and a repurposed laptop. All VMs cloned from a cloud-init Ubuntu template that auto-starts Portainer Agent, Dozzle Agent, Node Exporter, and cAdvisor on first boot — zero manual setup per host. One VM has GPU passthrough (GTX 1660) running Ollama for local LLM inference. TrueNAS (HP SFF, ZFS mirror 2 × 12 TB) provides NFS storage shared across all hosts via auto-mount in cloud-init."
+  tags: [Proxmox, cloud-init, KVM, TrueNAS, ZFS, GPU passthrough, Ollama]
 
-- name: Monitoring Stack
-  description: "Full observability across the homelab — Prometheus metrics, Grafana dashboards, Loki log aggregation, Alertmanager rules. Persistent NFS-backed volumes."
-  tags: [Prometheus, Grafana, Loki, Alertmanager]
+- name: Self-Hosted K3s Platform
+  description: "3-node K3s cluster (1 control plane + 2 workers) hosting 15+ containerised services across media, infrastructure, and personal namespaces. Traefik handles ingress with automatic HTTPS via cert-manager and Let's Encrypt. MetalLB provides the LoadBalancer IP. NFS-backed PersistentVolumes on TrueNAS. Key services: Immich (photo backup), Sonarr/Radarr/Prowlarr (media), Paperless-ngx (documents), Audiobookshelf, Searxng, Wallos, Karakeep, Rustdesk, Uptime Kuma, and Copyparty."
+  tags: [K3s, Kubernetes, Traefik, cert-manager, MetalLB, Helm, NFS]
+
+- name: Identity & Remote Access
+  description: "Authentik provides OIDC/SAML SSO for services that support it — single login across the homelab. All services run behind valid TLS certificates issued by cert-manager via Cloudflare DNS-01 challenge. Twingate zero-trust connector on the utility VM enables secure remote access without exposing any ports to the internet. The only public-facing service is n8n, exposed via a Cloudflare Tunnel specifically for Gmail OAuth verification. A Raspberry Pi 4 running WireGuard in Nepal provides a personal VPN for Nepali IP access."
+  tags: [Authentik, OIDC, SSO, Twingate, Cloudflare Tunnel, WireGuard, TLS]
+
+- name: Monitoring & Observability Stack
+  description: "Full observability pipeline across all hosts and containers. Prometheus scrapes Node Exporter (host metrics) and cAdvisor (container metrics) from every VM. Loki aggregates logs via Promtail on each host; OPNsense and system logs flow through syslog-ng into the same pipeline. Grafana dashboards track CPU, RAM, uptime, and container health across the cluster. Alertmanager handles alert routing. Every VM cloned from the Docker template reports into this stack automatically on first boot."
+  tags: [Prometheus, Grafana, Loki, Promtail, syslog-ng, Alertmanager]
