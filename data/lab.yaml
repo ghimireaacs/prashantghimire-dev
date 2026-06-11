@@ -6,7 +6,7 @@ items:
     stack: [OPNsense, VLANs, 802.1Q, Pi-hole, Cloudflare]
 
   - name: Compute & platform
-    what: "A two-node Proxmox cluster and a 3-node k3s cluster running 20+ services behind Traefik with automatic TLS. Cloud-init templates provision a fully monitored VM in under five minutes."
+    what: "A two-node Proxmox cluster and a 3-node k3s cluster running 40+ services behind Traefik with automatic TLS. Every workload carries CPU and memory requests and limits sized from live usage metrics, and cloud-init templates provision a fully monitored VM in under five minutes."
     stack: [Proxmox, k3s, Docker, Traefik, cloud-init, TrueNAS]
 
   - name: Observability
@@ -17,6 +17,6 @@ items:
     what: "Authentik SSO with MFA enforced on every service, SSH keys only, and zero open inbound ports. Remote access goes through zero-trust Twingate and a single Cloudflare Tunnel."
     stack: [Authentik, MFA, Twingate, cert-manager]
 
-  - name: Backups
-    what: "Irreplaceable data goes weekly through Restic to Backblaze B2, encrypted before it leaves the house. Everything re-creatable stays on local ZFS snapshots, which keeps the cloud bill close to zero."
-    stack: [Restic, Backblaze B2, ZFS]
+  - name: Storage & databases
+    what: "A mirrored ZFS pool serves NFS to the whole lab, with one deliberate exception: a dozen PostgreSQL instances stay on local disk for integrity, with automated nightly dumps for the critical ones. Redis, Meilisearch, and Elasticsearch round out the data layer."
+    stack: [ZFS, NFS, PostgreSQL, Redis, Meilisearch]

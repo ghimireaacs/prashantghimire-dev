@@ -1,4 +1,4 @@
-- title: IT Internship — Extratech
+- title: IT Internship · Extratech
   date: "Nov 2025 – Feb 2026"
   items:
     - "Administered Windows Server environments: Active Directory, DNS, DHCP, Group Policy, and NTFS permissions"
@@ -12,11 +12,11 @@
   items:
     - "Designed and built a 5-VLAN segmented network on OPNsense with per-VLAN firewall rules isolating server, personal, tenant, IoT, and workstation traffic"
     - "Administered a 2-node Proxmox cluster running Windows and Linux VMs with cloud-init automated provisioning"
-    - "Deployed 20+ self-hosted services on a 3-node K3s cluster with NFS storage, Traefik ingress, SSL certificates, and SSO via Authentik"
+    - "Deployed 40+ self-hosted services on a 3-node K3s cluster with NFS storage, Traefik ingress, SSL certificates, and SSO via Authentik, all resource-governed from live usage metrics"
     - "Configured Twingate zero-trust remote access, Pi-hole DNS filtering, and centralised monitoring (Prometheus, Grafana, Loki)"
     - "Practise defensive security on Blue Team Labs Online: Junior Defender rank, #24 in Australia, 32 investigations across incident response and forensics"
 
-- title: Customer Service — Retail
+- title: Customer Service · Retail
   date: "2021 – 2025"
   items:
     - "100–150 customer interactions per shift in a high-volume environment"
