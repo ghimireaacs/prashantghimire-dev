@@ -1,0 +1,22 @@
+intro: "Five machines under a desk running what most people rent from Google: photos, files, documents, calendars, media, and the network itself. In daily use since 2023, with no support contract and nobody to escalate to. When it breaks, I find out why."
+
+items:
+  - name: Network segmentation
+    what: "A 5-VLAN network on OPNsense: per-VLAN firewall policy, 802.1Q trunking on a managed switch, isolated tenant and IoT traffic, and split-horizon DNS through Pi-hole and Cloudflare. Real networking on real hardware, from subnetting decisions down to packet-level troubleshooting."
+    stack: [OPNsense, VLANs, 802.1Q, Pi-hole, Cloudflare]
+
+  - name: Compute & platform
+    what: "A two-node Proxmox cluster and a 3-node k3s cluster running 20+ services behind Traefik with automatic TLS. Cloud-init templates provision a fully monitored VM in under five minutes."
+    stack: [Proxmox, k3s, Docker, Traefik, cloud-init, TrueNAS]
+
+  - name: Observability
+    what: "Every host, container, and firewall log flows into one pipeline: Prometheus for metrics, Loki for logs via Promtail and syslog-ng, Grafana for dashboards and alerting. The same log analysis I practise on Blue Team Labs Online (#24 in Australia), applied to live infrastructure."
+    stack: [Prometheus, Grafana, Loki, syslog-ng]
+
+  - name: Identity & access
+    what: "Authentik SSO with MFA enforced on every service, SSH keys only, and zero open inbound ports. Remote access goes through zero-trust Twingate and a single Cloudflare Tunnel."
+    stack: [Authentik, MFA, Twingate, cert-manager]
+
+  - name: Backups
+    what: "Irreplaceable data goes weekly through Restic to Backblaze B2, encrypted before it leaves the house. Everything re-creatable stays on local ZFS snapshots, which keeps the cloud bill close to zero."
+    stack: [Restic, Backblaze B2, ZFS]

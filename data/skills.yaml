@@ -1,0 +1,20 @@
+- category: Windows & Desktop
+  skills: "Windows 10/11 · Windows Server · BSOD & driver troubleshooting · printer support · RDP / Quick Assist · OS imaging"
+
+- category: Microsoft Cloud
+  skills: "Microsoft 365 · Exchange Online · Intune / MDM · Entra ID · MFA · Conditional Access · Teams · SharePoint"
+
+- category: Active Directory
+  skills: "AD DS · DNS · DHCP · Group Policy · NTFS permissions · onboarding & offboarding"
+
+- category: Networking
+  skills: "TCP/IP · VLANs & 802.1Q · OPNsense firewall · DNS / DHCP · VPN (WireGuard, Twingate) · Cisco IOS"
+
+- category: Linux & Infra
+  skills: "Ubuntu Server · SSH · Docker · Kubernetes (k3s) · Proxmox VE · TrueNAS / ZFS · Terraform · Ansible"
+
+- category: Security
+  skills: "BTLO Junior Defender (AU #24) · log analysis · incident response labs · network segmentation · SSO / MFA · TLS / PKI"
+
+- category: Scripting & ITSM
+  skills: "PowerShell · Bash · Git · ITIL fundamentals · ticketing & documentation"

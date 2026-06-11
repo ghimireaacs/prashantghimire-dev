@@ -10,7 +10,7 @@ Uses the [grain-hugo-theme](https://github.com/ghimireaacs/grain-hugo-theme) the
 
 | Repo | What it is |
 |---|---|
-| `prashantghimire-hugo` (this) | Site content — data files, config, Netlify config |
+| `prashantghimire-dev` (this) | Site content — data files, config, Netlify config |
 | `grain-hugo-theme` | The Hugo theme — templates, CSS, JS |
 
 **Why submodule and not Hugo modules?**
@@ -53,12 +53,11 @@ All content lives in `data/` and `hugo.toml` — no need to touch the theme.
 
 | File | What to edit |
 |---|---|
-| `hugo.toml` | Name, role, bio, email, LinkedIn, GitHub, avatar |
-| `data/skills_support.yaml` | IT support skills tab |
-| `data/skills_homelab.yaml` | Homelab skills tab |
-| `data/experience.yaml` | Work history entries |
+| `hugo.toml` | Name, role, location, bio, contact links, footer note |
+| `data/experience.yaml` | Work history entries (timeline) |
+| `data/lab.yaml` | Homelab section — intro + proof-of-work entries |
+| `data/skills.yaml` | Single merged skills table |
 | `data/certifications.yaml` | Certs and education |
-| `data/projects.yaml` | Project cards |
 
 ### Adding a profile photo
 
@@ -116,17 +115,16 @@ Deploys automatically on every push to `main`.
 ## Project structure
 
 ```
-prashantghimire-hugo/
+prashantghimire-dev/
 ├── hugo.toml              # site config and all personal params
 ├── netlify.toml           # build config for Netlify
 ├── content/
 │   └── _index.md          # empty — required by Hugo for homepage
 ├── data/
-│   ├── skills_support.yaml
-│   ├── skills_homelab.yaml
 │   ├── experience.yaml
-│   ├── certifications.yaml
-│   └── projects.yaml
+│   ├── lab.yaml
+│   ├── skills.yaml
+│   └── certifications.yaml
 ├── static/
 │   └── img/               # drop avatar here if using photo
 └── themes/

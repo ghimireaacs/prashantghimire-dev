@@ -1,8 +1,11 @@
+- name: Blue Team Labs Online — Junior Defender
+  org: "AU #24 · Global #431"
+
 - name: Junior Penetration Tester
   org: TryHackMe
 
-- name: Job-Ready IT Program
-  org: "AD · M365 · Azure · Intune"
+- name: ITIL 4 Foundation Course
+  org: LinkedIn Learning
 
 - name: Cisco CCNA
   org: Training completed

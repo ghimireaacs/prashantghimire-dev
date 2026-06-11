@@ -1,10 +1,20 @@
+- title: IT Internship — Extratech
+  date: "Nov 2025 – Feb 2026"
+  items:
+    - "Administered Windows Server environments: Active Directory, DNS, DHCP, Group Policy, and NTFS permissions"
+    - "Managed Microsoft 365 services: Exchange Online, shared mailbox delegation, Intune/MDM enrolment, and Conditional Access"
+    - "Worked with Azure infrastructure including IAM, resource groups, and identity tasks"
+    - "Configured VLANs and inter-VLAN routing on real Cisco routers using Cisco IOS; completed a CCST-aligned networking curriculum"
+    - "Resolved L1/L2 scenarios through a structured ticketing workflow with documented fixes"
+
 - title: IT Lab & Infrastructure
   date: "Jan 2023 – Present"
   items:
     - "Designed and built a 5-VLAN segmented network on OPNsense with per-VLAN firewall rules isolating server, personal, tenant, IoT, and workstation traffic"
-    - "Administered a 2-node Proxmox cluster running 10+ VMs across Windows and Linux with cloud-init automated provisioning"
-    - "Deployed 15+ self-hosted services on a 3-node K3s cluster with NFS storage, Traefik ingress, SSL certificates, and SSO via Authentik"
+    - "Administered a 2-node Proxmox cluster running Windows and Linux VMs with cloud-init automated provisioning"
+    - "Deployed 20+ self-hosted services on a 3-node K3s cluster with NFS storage, Traefik ingress, SSL certificates, and SSO via Authentik"
     - "Configured Twingate zero-trust remote access, Pi-hole DNS filtering, and centralised monitoring (Prometheus, Grafana, Loki)"
+    - "Practise defensive security on Blue Team Labs Online: Junior Defender rank, #24 in Australia, 32 investigations across incident response and forensics"
 
 - title: Customer Service — Retail
   date: "2021 – 2025"

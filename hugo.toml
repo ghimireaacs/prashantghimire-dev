@@ -7,11 +7,13 @@ disableKinds = ["taxonomy", "term"]
 [params]
   name       = "Prashant Ghimire"
   role       = "IT Support Technician"
+  location   = "Sydney, Australia · AEST"
   available  = "Open to work"
-  bio        = "Three years on a checkout taught me to stay calm when things break and actually listen to what people need. I've since built out the technical side — Windows Server, Active Directory, Microsoft 365, networking. The homelab is a multi-host setup: OPNsense firewall with a live 5-VLAN segmented network, a 2-node Proxmox cluster, a 3-node k3s cluster running 15+ services, and a TrueNAS NAS. Built because it's genuinely interesting, not just to pad a CV."
+  footerNote = "Built with Hugo on a hand-rolled theme. No trackers, no analytics, no frameworks."
+  bio        = "Three years on a checkout taught me to stay calm when things break and actually listen to what people need. The technical side came after: an IT internship covering Windows Server, Active Directory, Microsoft 365, and Cisco networking, plus a homelab that has been part of daily life since 2023."
   email      = "jobs@prashantghimire.dev"
   linkedin   = "https://linkedin.com/in/prashant-ghimire"
   github     = "https://github.com/ghimireaacs"
   # avatar      = "/img/photo.jpg"        # optional — initials shown if omitted
-  description  = "IT Support Technician with hands-on experience in Microsoft 365, Office 365, Active Directory, Windows Server, Exchange Online, Intune, PowerShell, and networking. Seeking Level 1 / Level 2 IT Support, Help Desk, and Service Desk roles."
+  description  = "IT Support Technician with an enterprise IT internship and hands-on experience in Microsoft 365, Office 365, Active Directory, Windows Server, Exchange Online, Intune, PowerShell, and networking. Seeking Level 1 / Level 2 IT Support, Help Desk, Service Desk, and junior security roles."
   ogImage    = "/img/og-preview.jpg"   # optional — 1200x630px, shown on LinkedIn/Twitter previews
