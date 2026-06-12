@@ -14,7 +14,7 @@
   skills: "Ubuntu Server · SSH · Docker · Kubernetes (k3s) · Proxmox VE · TrueNAS / ZFS · Terraform · Ansible"
 
 - category: Security
-  skills: "BTLO Junior Defender (AU #24) · log analysis · incident response labs · network segmentation · SSO / MFA · TLS / PKI"
+  skills: "Wazuh SIEM (custom detection rules, MITRE ATT&CK) · CrowdSec · BTLO Junior Defender (AU #24) · log analysis · incident response labs · network segmentation · SSO / MFA · TLS / PKI"
 
 - category: Scripting & ITSM
   skills: "PowerShell · Bash · Git · ITIL fundamentals · ticketing & documentation"

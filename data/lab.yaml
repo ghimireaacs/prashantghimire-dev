@@ -9,9 +9,9 @@ items:
     what: "A two-node Proxmox cluster and a 3-node k3s cluster running 40+ services behind Traefik with automatic TLS. Every workload carries CPU and memory requests and limits sized from live usage metrics, and cloud-init templates provision a fully monitored VM in under five minutes."
     stack: [Proxmox, k3s, Docker, Traefik, cloud-init, TrueNAS]
 
-  - name: Observability
-    what: "Every host, container, and firewall log flows into one pipeline: Prometheus for metrics, Loki for logs via Promtail and syslog-ng, Grafana for dashboards and alerting. The same log analysis I practise on Blue Team Labs Online (#24 in Australia), applied to live infrastructure."
-    stack: [Prometheus, Grafana, Loki, syslog-ng]
+  - name: Observability & SIEM
+    what: "Every host, container, and firewall log flows into one pipeline: Prometheus for metrics, Loki for logs via Promtail, Grafana for dashboards and alerting. A dedicated Wazuh SIEM adds agent-based detection on top, with my OPNsense firewall feeding it over agentless syslog and custom rules I wrote to flag port scans (mapped to MITRE ATT&CK), plus CrowdSec for behavioural detection. The same analysis I practise on Blue Team Labs Online (#24 in Australia), applied to live infrastructure."
+    stack: [Wazuh, CrowdSec, OPNsense, Prometheus, Grafana, Loki]
 
   - name: Identity & access
     what: "Authentik SSO with MFA enforced on every service, SSH keys only, and zero open inbound ports. Remote access goes through zero-trust Twingate and a single Cloudflare Tunnel."
