@@ -1,132 +1,20 @@
 # prashantghimire.dev
 
-Personal portfolio site built with [Hugo](https://gohugo.io), deployed on Netlify.
+Personal portfolio. Plain HTML and CSS at the repo root — no framework, no build step, no JavaScript, no trackers.
 
-Uses the [grain-hugo-theme](https://github.com/ghimireaacs/grain-hugo-theme) theme — a separate repo linked here as a git submodule.
+Deployed on Netlify: every push publishes the repo as-is (see `netlify.toml`).
 
----
+## Structure
 
-## Two-repo structure
+- `index.html` — the whole site: hero, lab, network map (inline SVG), field notes, experience, skills, certifications, contact
+- `style.css` — design tokens in `:root` (colors, fonts); change tokens, not scattered values
 
-| Repo | What it is |
-|---|---|
-| `prashantghimire-dev` (this) | Site content — data files, config, Netlify config |
-| `grain-hugo-theme` | The Hugo theme — templates, CSS, JS |
+## Editing
 
-**Why submodule and not Hugo modules?**
-Hugo modules require Go installed in the build environment and add `go.mod` complexity. For a single theme used on one site, a git submodule is simpler — Netlify supports it natively with one env variable.
-
----
-
-## Local setup
-
-Requires [Hugo](https://gohugo.io/installation/) (extended edition recommended).
-
-**First clone:**
-```bash
-git clone --recurse-submodules https://github.com/ghimireaacs/prashantghimire-dev.git
-cd prashantghimire-dev
-```
-
-If you already cloned without `--recurse-submodules`:
-```bash
-git submodule update --init
-```
-
-**Run dev server:**
-```bash
-hugo server
-# open http://localhost:1313
-```
-
-**Build for production:**
-```bash
-hugo
-# output in public/
-```
-
----
-
-## Updating content
-
-All content lives in `data/` and `hugo.toml` — no need to touch the theme.
-
-| File | What to edit |
-|---|---|
-| `hugo.toml` | Name, role, location, bio, contact links, footer note |
-| `data/experience.yaml` | Work history entries (timeline) |
-| `data/lab.yaml` | Homelab section — intro + proof-of-work entries |
-| `data/skills.yaml` | Single merged skills table |
-| `data/certifications.yaml` | Certs and education |
-
-### Adding a profile photo
-
-1. Drop the image in `static/img/photo.jpg`
-2. In `hugo.toml`, uncomment and set:
-   ```toml
-   avatar = "/img/photo.jpg"
-   ```
-   If `avatar` is not set, the site shows your initials instead.
-
----
-
-## Updating the theme
-
-The theme is pinned to a specific commit. Netlify will not pick up theme changes automatically — you need to update the pin manually:
+Edit the two files directly and push. To preview locally, open `index.html` in a browser or:
 
 ```bash
-git submodule update --remote themes/grain-resume
-git add themes/grain-resume
-git commit -m "update theme"
-git push
+python3 -m http.server 8080
 ```
 
-Netlify auto-deploys on that push.
-
----
-
-## Netlify deployment
-
-**First deploy:**
-
-1. Push this repo to GitHub
-2. In Netlify: **Add new site → Import an existing project** → connect the repo
-3. Build settings are auto-detected from `netlify.toml` (see below)
-4. Set one environment variable in Netlify dashboard:
-   - Key: `GIT_SUBMODULE_STRATEGY`
-   - Value: `recursive`
-
-This tells Netlify to pull the theme submodule during build.
-
-**`netlify.toml`** (create this at the repo root):
-```toml
-[build]
-  command = "hugo"
-  publish = "public"
-
-[build.environment]
-  HUGO_VERSION = "0.154.5"
-```
-
-Deploys automatically on every push to `main`.
-
----
-
-## Project structure
-
-```
-prashantghimire-dev/
-├── hugo.toml              # site config and all personal params
-├── netlify.toml           # build config for Netlify
-├── content/
-│   └── _index.md          # empty — required by Hugo for homepage
-├── data/
-│   ├── experience.yaml
-│   ├── lab.yaml
-│   ├── skills.yaml
-│   └── certifications.yaml
-├── static/
-│   └── img/               # drop avatar here if using photo
-└── themes/
-    └── grain-resume/      # git submodule — do not edit directly
-```
+The previous Hugo + grain-hugo-theme setup was removed in July 2026; it lives in git history if ever needed.

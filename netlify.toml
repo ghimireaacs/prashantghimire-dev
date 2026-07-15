@@ -1,6 +1,3 @@
+# Static site — no build step.
 [build]
-  command = "hugo"
-  publish = "public"
-
-[build.environment]
-  HUGO_VERSION = "0.154.5"
+  publish = "."
