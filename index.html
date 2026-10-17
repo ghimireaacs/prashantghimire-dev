@@ -3,133 +3,114 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f4ee">
 <title>Prashant Ghimire · Infrastructure, DevOps &amp; IT Support</title>
-<meta name="description" content="Prashant Ghimire, Australia. Infrastructure, DevOps and IT support across Linux, Kubernetes, Docker, Terraform, Ansible and Microsoft 365. Projects, automation and practical troubleshooting.">
+<meta name="description" content="Prashant Ghimire, Australia. I build, deploy and troubleshoot infrastructure with Linux, Kubernetes, Docker, Terraform and Ansible. Explore my projects, skills and field notes.">
 <meta property="og:title" content="Prashant Ghimire · Infrastructure, DevOps &amp; IT Support">
-<meta property="og:description" content="Build, deploy, automate and troubleshoot. Explore my skills, infrastructure projects and field notes.">
+<meta property="og:description" content="Build it. Run it. Make it work. Infrastructure, automation and practical troubleshooting.">
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main navigation">
-  <a class="nav-name" href="#top">PG<span class="nav-dot">.</span></a>
-  <div class="nav-links">
-    <a href="#capabilities">Capabilities</a>
-    <a href="#projects">Projects</a>
-    <a href="#notes">Notes</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact" class="nav-cta">Contact</a>
-  </div>
+  <a class="brand" href="#top" aria-label="Prashant Ghimire, back to top"><span class="brand-mark">PG<span>.</span></span><span class="brand-name">Prashant Ghimire<span>Infrastructure &amp; automation</span></span></a>
+  <div class="nav-links" id="nav-links"><a href="#projects">Work</a><a href="#capabilities">Capabilities</a><a href="#notes">Field notes</a><a href="#experience">Experience</a><a href="#contact" class="nav-contact">Let's talk <span aria-hidden="true">↗</span></a></div>
+  <div class="nav-controls"><button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false" hidden><span class="motion-icon" aria-hidden="true"></span><span class="motion-label">Motion off</span></button><button class="menu-toggle" id="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" hidden>Menu <span aria-hidden="true">+</span></button></div>
 </nav>
 
-<header class="hero" id="top">
-  <h1>Prashant <span class="outline">Ghimire</span></h1>
-  <p class="role">Infrastructure, DevOps &amp; IT Support</p>
-  <p class="loc">Australia</p>
-  <p class="bio">I build, deploy and troubleshoot infrastructure with Linux, Kubernetes,
-  Docker, Terraform and Ansible. My work connects networking, automation, monitoring
-  and security, backed by projects I operate and an enterprise IT internship.
-  I'm comfortable picking up tools, understanding how they fit together and putting them to work.</p>
-  <div class="stats" aria-label="Areas of capability">
-    <div class="stat"><b>Build</b><span>Linux, networks &amp; infrastructure</span></div>
-    <div class="stat"><b>Deploy</b><span>Containers, IaC &amp; delivery</span></div>
-    <div class="stat"><b>Operate</b><span>Monitoring, security &amp; recovery</span></div>
-    <div class="stat"><b>Support</b><span>Microsoft systems &amp; people</span></div>
+<header class="hero wrap" id="top">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Prashant Ghimire / Australia</p>
+    <h1>Build it.<br>Run it.<br>Make it <em>work.</em></h1>
+    <p class="hero-role">Infrastructure. DevOps. IT Support.</p>
+    <p class="bio">I build, deploy and troubleshoot systems with Linux, Kubernetes,
+    Docker, Terraform and Ansible. I like understanding how the pieces fit,
+    figuring out what broke and making the next step easier.</p>
+    <div class="hero-links"><a class="button button-dark" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/ghimireaacs" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div>
   </div>
-  <div class="hero-links">
-    <a class="btn btn-solid" href="#projects">Explore my work</a>
-    <a class="btn" href="https://github.com/ghimireaacs" target="_blank" rel="noopener">GitHub</a>
-    <a class="btn" href="https://linkedin.com/in/prashant-ghimire" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn" href="mailto:jobs@prashantghimire.dev">Email me</a>
+  <div class="hero-visual">
+    <div class="visual-topline"><span>Systems / in motion</span><span aria-hidden="true">[ PG / 01 ]</span></div>
+    <svg class="system-art" viewBox="0 0 560 540" aria-hidden="true" focusable="false">
+<defs><pattern id="hero-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path class="art-grid" d="M 28 0 H 0 V 28"/></pattern></defs>
+<rect width="560" height="540" fill="url(#hero-grid)"/>
+<circle class="art-orbit" cx="280" cy="270" r="207"/>
+<circle class="art-orbit art-orbit-inner" cx="280" cy="270" r="157"/>
+<path class="art-route" d="M 88 114 H 280 V 224 M 472 114 H 280 M 280 316 V 418 H 88 M 280 418 H 472"/>
+<path class="art-signal art-signal-one" d="M 88 114 H 280 V 224"/>
+<path class="art-signal art-signal-two" d="M 280 316 V 418 H 472"/>
+<g class="art-core"><rect class="art-core-box" x="214" y="204" width="132" height="132" rx="24" transform="rotate(-8 280 270)"/><path class="art-core-mark" d="m 252 248 -22 22 22 22 m 56 -44 22 22 -22 22 m -18 -58 -20 76"/></g>
+<g class="art-node"><circle cx="88" cy="114" r="28"/><path d="M 77 114 H 99 M 88 103 V 125"/></g>
+<g class="art-node"><circle cx="472" cy="114" r="28"/><path d="m 460 116 8 8 16 -20"/></g>
+<g class="art-node"><circle cx="88" cy="418" r="28"/><path d="M 75 418 H 82 L 87 407 94 429 100 418"/></g>
+<g class="art-node"><circle cx="472" cy="418" r="28"/><path d="M 461 426 V 411 H 483 V 426 M 466 407 V 402 H 478 V 407"/></g>
+<text class="art-label" x="88" y="165">BUILD</text><text class="art-label" x="472" y="165">DEPLOY</text>
+<text class="art-label" x="88" y="470">OBSERVE</text><text class="art-label" x="472" y="470">IMPROVE</text>
+<text class="art-center-label" x="280" y="376">UNDERSTAND THE SYSTEM.</text>
+</svg>
+    <div class="visual-bottomline"><span>Curiosity → configuration → capability</span><span class="visual-cross" aria-hidden="true">✳</span></div>
+    <span class="visual-sticker">Always<br><em>figuring it out.</em></span>
   </div>
+  <div class="hero-footer"><p>Hands-on experience. A growing toolkit.<br>A practical approach to getting things working.</p><a href="#projects">Scroll to explore <span aria-hidden="true">↓</span></a></div>
 </header>
 
-<main>
-<section id="capabilities" class="section">
-  <span class="vlabel" aria-hidden="true">Capability</span>
-  <div class="section-head">
-    <span class="kicker">01 · What I can do</span>
-    <h2>From setup to troubleshooting.</h2>
-    <p class="lede">I work across the systems behind an application: the host it runs on,
-    the network it uses, how it gets deployed and what happens when it breaks.</p>
+<div class="tool-ribbon" aria-label="Core tools"><div class="wrap"><span>Linux</span><i aria-hidden="true">✳</i><span>Kubernetes</span><i aria-hidden="true">✳</i><span>Docker</span><i aria-hidden="true">✳</i><span>Terraform</span><i aria-hidden="true">✳</i><span>Ansible</span></div></div>
+
+<main id="main">
+<section id="projects" class="section wrap">
+  <div class="section-heading" data-reveal><p class="eyebrow">01 / Selected work</p><h2>Made to be used.<br><em>Open to explore.</em></h2><p>Infrastructure configurations, a small application and a reusable theme. Different projects, the same instinct to build something useful.</p></div>
+  <div class="project-grid">
+    <article class="project project-feature" data-reveal>
+      <div class="project-copy"><p class="project-index">01 / Infrastructure &amp; automation</p><h3><a href="https://github.com/ghimireaacs/myhomelab" target="_blank" rel="noopener">myhomelab <span aria-hidden="true">↗</span></a></h3><p>Kubernetes manifests, Docker Compose stacks, Terraform modules and Ansible playbooks for infrastructure I operate. Configurations you can inspect, copy and adapt.</p><ul class="chips"><li>Kubernetes</li><li>Docker</li><li>Terraform</li><li>Ansible</li></ul><p class="project-footnote">The services evolve. The knowledge stays.</p></div>
+      <div class="project-art lab-art" aria-hidden="true"><span class="art-caption">A system of connected parts</span><div class="lab-node lab-node-top">NETWORK</div><div class="lab-branches"><div class="lab-node">COMPUTE</div><div class="lab-node">CONTAINERS</div></div><div class="lab-foundation"><span>Storage</span><span>Identity</span><span>Observe</span></div><span class="lab-art-cross">✳</span></div>
+    </article>
+    <article class="project project-code" data-reveal>
+      <div class="project-art code-art" aria-hidden="true"><div class="code-window"><div class="code-toolbar"><span>CodeShuttle</span><span>↗</span></div><div class="code-lines"><span><b>01</b> from flask import Flask</span><span><b>02</b> app = Flask(__name__)</span><span><b>03</b></span><span><b>04</b> <em>share(snippets, logs, files)</em></span></div><div class="code-tag">A small tool. A useful purpose.</div></div></div>
+      <div class="project-copy"><p class="project-index">02 / Application &amp; packaging</p><h3><a href="https://github.com/ghimireaacs/codeshuttle" target="_blank" rel="noopener">CodeShuttle <span aria-hidden="true">↗</span></a></h3><p>A Flask and SQLite app for sharing snippets, logs and files. Containerized and packaged through GHCR for straightforward deployment.</p><ul class="chips"><li>Python</li><li>Flask</li><li>SQLite</li><li>Docker</li></ul></div>
+    </article>
+    <article class="project project-theme" data-reveal>
+      <div class="project-art theme-art" aria-hidden="true"><div class="theme-sheet"><span class="theme-sheet-label">grain / a portfolio theme</span><strong>A little<br><em>character.</em></strong><div class="theme-rule"></div><div class="theme-lines"><span></span><span></span><span></span></div><span class="theme-sheet-footer">Content first. Room to make it yours.</span></div><span class="theme-star">✳</span></div>
+      <div class="project-copy"><p class="project-index">03 / Design &amp; reusable tooling</p><h3><a href="https://github.com/ghimireaacs/grain-hugo-theme" target="_blank" rel="noopener">grain-hugo-theme <span aria-hidden="true">↗</span></a></h3><p>A configurable Hugo portfolio theme with responsive layouts, a print stylesheet and an example site. Built for someone else to make their own.</p><ul class="chips"><li>Hugo</li><li>HTML</li><li>CSS</li><li>YAML</li></ul></div>
+    </article>
   </div>
-  <div class="card-grid">
-    <article class="card">
+</section>
+
+<section id="capabilities" class="section capability-section">
+  <div class="wrap"><div class="section-heading" data-reveal><p class="eyebrow">02 / What I can do</p><h2>Across the stack.<br><em>Into the details.</em></h2><p>I work across the systems behind an application: the host, the network, how it gets deployed and what happens when it breaks.</p></div><div class="capability-grid"><article class="capability" data-reveal><span class="item-number">01</span><div>
       <h3>Infrastructure &amp; containers</h3>
       <p>Set up Linux hosts, build Proxmox VMs and deploy applications with Docker Compose and Kubernetes. Configure persistent storage, secrets, resource settings and ingress, then work through host and application failures.</p>
       <ul class="chips"><li>Linux</li><li>Proxmox</li><li>Docker</li><li>Kubernetes</li><li>Helm</li><li>cloud-init</li></ul>
-    </article>
-    <article class="card">
+    </div></article>
+<article class="capability" data-reveal><span class="item-number">02</span><div>
       <h3>Automation &amp; delivery</h3>
       <p>Define infrastructure with Terraform and automate host setup, deployment, patching and backups with Ansible. Build container images, configure CI/CD workflows and publish artifacts. Use Bash, Python and APIs to automate repeated work.</p>
       <ul class="chips"><li>Terraform</li><li>Ansible</li><li>Forgejo Actions</li><li>Git</li><li>Bash</li><li>Python</li></ul>
-    </article>
-    <article class="card">
+    </div></article>
+<article class="capability" data-reveal><span class="item-number">03</span><div>
       <h3>Networking &amp; identity</h3>
       <p>Configure VLANs, firewall policy, DNS, DHCP and remote access. Route services through Traefik and MetalLB, automate TLS certificates and integrate SSO, OIDC and MFA. Trace connectivity problems from name resolution to the application.</p>
       <ul class="chips"><li>OPNsense</li><li>Cloudflare</li><li>Traefik</li><li>WireGuard</li><li>Authentik</li><li>cert-manager</li></ul>
-    </article>
-    <article class="card">
+    </div></article>
+<article class="capability" data-reveal><span class="item-number">04</span><div>
       <h3>Monitoring &amp; security</h3>
       <p>Collect metrics and logs, build dashboards and configure alerts. Investigate Wazuh detections, write firewall correlation rules mapped to MITRE ATT&amp;CK and use packet captures to understand traffic.</p>
       <ul class="chips"><li>Prometheus</li><li>Grafana</li><li>Loki</li><li>Wazuh</li><li>CrowdSec</li><li>Wireshark</li></ul>
-    </article>
-    <article class="card">
+    </div></article>
+<article class="capability" data-reveal><span class="item-number">05</span><div>
       <h3>Storage &amp; recovery</h3>
       <p>Work with TrueNAS, ZFS and NFS alongside local database storage. Back up databases and application state, encrypt cluster backups and document the steps needed to restore services.</p>
       <ul class="chips"><li>TrueNAS</li><li>ZFS</li><li>NFS</li><li>PostgreSQL</li><li>SQLite</li><li>Backups</li></ul>
-    </article>
-    <article class="card">
+    </div></article>
+<article class="capability" data-reveal><span class="item-number">06</span><div>
       <h3>Microsoft &amp; IT support</h3>
       <p>Administer Microsoft 365, Active Directory and Windows Server. Manage users, mailboxes, permissions and device enrolment. Troubleshoot Windows and connectivity issues, explain the fix and document the outcome.</p>
       <ul class="chips"><li>Microsoft 365</li><li>Active Directory</li><li>Entra ID</li><li>Intune</li><li>Exchange Online</li><li>PowerShell</li></ul>
-    </article>
-  </div>
+    </div></article></div></div>
 </section>
 
-<section id="projects" class="section">
-  <span class="vlabel" aria-hidden="true">Projects</span>
-  <div class="section-head">
-    <span class="kicker">02 · Selected work</span>
-    <h2>Code you can explore.</h2>
-    <p class="lede">Infrastructure configurations, a small application and a reusable theme.
-    Each project puts a different part of my toolkit to work.</p>
-  </div>
-  <div class="card-grid">
-    <article class="card">
-      <h3><a href="https://github.com/ghimireaacs/myhomelab" target="_blank" rel="noopener">myhomelab</a></h3>
-      <p>Kubernetes manifests, Docker Compose stacks, Terraform modules and Ansible
-      playbooks for infrastructure I operate. Reusable configurations for others to adapt.
-      Services change as I experiment; the repository captures work across that journey.</p>
-      <ul class="chips"><li>Infrastructure</li><li>Automation</li><li>Operations</li></ul>
-    </article>
-    <article class="card">
-      <h3><a href="https://github.com/ghimireaacs/codeshuttle" target="_blank" rel="noopener">CodeShuttle</a></h3>
-      <p>A Flask and SQLite application for sharing snippets, logs and files.
-      Containerized and packaged through GHCR, with persistent storage and a
-      straightforward Docker deployment.</p>
-      <ul class="chips"><li>Python</li><li>Flask</li><li>SQLite</li><li>Docker</li></ul>
-    </article>
-    <article class="card">
-      <h3><a href="https://github.com/ghimireaacs/grain-hugo-theme" target="_blank" rel="noopener">grain-hugo-theme</a></h3>
-      <p>A reusable Hugo portfolio theme with content driven by configuration and data
-      files. Responsive layouts, a print stylesheet and an example site make it
-      adaptable to another person's portfolio.</p>
-      <ul class="chips"><li>Hugo</li><li>HTML</li><li>CSS</li><li>YAML</li></ul>
-    </article>
-  </div>
-</section>
-
-<section id="map" class="section">
-  <span class="vlabel" aria-hidden="true">Systems</span>
-  <div class="section-head">
-    <span class="kicker">03 · Architecture</span>
-    <h2>How the pieces connect.</h2>
-    <p class="lede">A simplified view of my homelab: network access, two application
-    platforms, and the storage and operating tools that support them.
-    The implementation evolves as I try tools and move workloads.</p>
-  </div>
-  <figure class="map-sheet">
-    <svg viewBox="0 0 960 540" role="img" aria-labelledby="map-title map-desc">
+<section id="map" class="section wrap">
+  <div class="section-heading heading-split" data-reveal><div><p class="eyebrow">03 / The architecture</p><h2>See the<br><em>connections.</em></h2></div><p>Network access, two application platforms, and the tools that support them. A simplified view of the homelab as I experiment and move workloads.</p></div>
+  <figure class="map-sheet" data-reveal><div class="map-header"><span>Infrastructure / logical view</span><span aria-hidden="true">[ 01 → 06 ]</span></div><div class="map-scroll" tabindex="0" role="region" aria-label="Architecture diagram; scroll horizontally on small screens"><svg viewBox="0 0 960 540" role="img" aria-labelledby="map-title map-desc">
       <title id="map-title">Homelab architecture overview</title>
       <desc id="map-desc">OPNsense and a managed switch connect the network to Docker
       hosts on Proxmox and a k3s cluster. Traefik routes application traffic and
@@ -164,24 +145,12 @@
       <rect class="m-box-hi" x="50" y="444" width="860" height="72" rx="6"/>
       <text class="m-label" x="480" y="473">PROVISION · CONFIGURE · BUILD · MAINTAIN</text>
       <text class="m-sub" x="480" y="496">Terraform · Ansible · Forgejo Actions · scripts &amp; runbooks</text>
-    </svg>
-    <figcaption class="map-caption">Logical architecture. Detailed configurations live in
-    <a href="https://github.com/ghimireaacs/myhomelab" target="_blank" rel="noopener">myhomelab</a>.</figcaption>
-  </figure>
+    </svg></div><figcaption>Logical relationships, not a fixed service inventory. <a href="https://github.com/ghimireaacs/myhomelab" target="_blank" rel="noopener">Explore the configurations <span aria-hidden="true">↗</span></a></figcaption></figure>
 </section>
 
-<section id="notes" class="section">
-  <span class="vlabel" aria-hidden="true">Notes</span>
-  <div class="section-head">
-    <span class="kicker">04 · Field notes</span>
-    <h2>Things that broke</h2>
-    <p class="lede">Troubleshooting is the job. Three incidents from the lab, exactly as they
-    happened: what broke, how I chased it, and what changed.</p>
-  </div>
-
-  <div class="card-grid">
-    <article class="card">
-      <h3>The SIEM called md5sum a trojan</h3>
+<section id="notes" class="section wrap">
+  <div class="section-heading heading-split" data-reveal><div><p class="eyebrow">04 / Field notes</p><h2>Things break.<br><em>I get curious.</em></h2></div><p>Three real investigations from the lab. What happened, where I looked and what changed.</p></div>
+  <div class="cases"><details class="case" open><summary><span class="item-number">01</span><h3>The SIEM called md5sum a trojan</h3><span class="case-toggle" aria-hidden="true">+</span></summary><div class="case-body">
       <p>Twenty-seven seconds after I enrolled a new Ubuntu agent, Wazuh fired "Trojaned
       version of /usr/bin/md5sum", thirty-two times. Instead of muting it, I verified the
       binary against the package database (clean), then read the signature itself: the legacy
@@ -189,10 +158,8 @@
       Rust rewrite of coreutils, one multicall binary with exactly those strings embedded.
       False positive. Tuned the check for that host and documented the signature mismatch.</p>
       <ul class="chips"><li>Wazuh</li><li>rootcheck</li><li>Ubuntu 25.10</li></ul>
-    </article>
-
-    <article class="card">
-      <h3>The alerts that never arrived</h3>
+    </div></details>
+<details class="case"><summary><span class="item-number">02</span><h3>The alerts that never arrived</h3><span class="case-toggle" aria-hidden="true">+</span></summary><div class="case-body">
       <p>Grafana said my storage alerts were firing. My phone said nothing. The webhook to my
       self-hosted ntfy server was returning 403 even though the token was correct. Root cause:
       Grafana's webhook contact point wants its bearer-auth keys in snake_case, and camelCase
@@ -200,10 +167,8 @@
       fix, plus a lesson that stuck: test the delivery path end to end. A green alert rule
       means nothing if nobody hears it.</p>
       <ul class="chips"><li>Grafana</li><li>ntfy</li><li>alerting</li></ul>
-    </article>
-
-    <article class="card">
-      <h3>The rule that crashed the SIEM twice</h3>
+    </div></details>
+<details class="case"><summary><span class="item-number">03</span><h3>The rule that crashed the SIEM twice</h3><span class="case-toggle" aria-hidden="true">+</span></summary><div class="case-body">
       <p>I wanted OPNsense port scans flagged in Wazuh, so I wrote a custom decoder. It crashed
       the manager: OSSEC regex is its own engine, not PCRE. My first rule crashed it again:
       "action" is a static field with dedicated match syntax. Third pass worked, and taught the
@@ -212,18 +177,11 @@
       in sixty seconds from a single source to a level-10 alert, mapped to MITRE T1046, network
       service scanning.</p>
       <ul class="chips"><li>Wazuh rules</li><li>OPNsense</li><li>MITRE ATT&amp;CK</li></ul>
-    </article>
-  </div>
+    </div></details></div>
 </section>
 
-<section id="experience" class="section">
-  <span class="vlabel" aria-hidden="true">Record</span>
-  <div class="section-head">
-    <span class="kicker">05 · The record</span>
-    <h2>Experience</h2>
-  </div>
-
-  <div class="timeline">
+<section id="experience" class="section experience-section">
+  <div class="wrap experience-layout"><div class="section-heading" data-reveal><p class="eyebrow">05 / Experience</p><h2>Systems.<br>People.<br><em>Practice.</em></h2><p>Technical work backed by an enterprise IT internship and experience helping people under pressure.</p></div><div class="timeline">
     <article class="entry">
       <div class="entry-when">Nov 2025 - Feb 2026</div>
       <div class="entry-body card">
@@ -264,15 +222,11 @@
         </ul>
       </div>
     </article>
-  </div>
+  </div></div>
 </section>
 
-<section id="skills" class="section">
-  <span class="vlabel" aria-hidden="true">Toolkit</span>
-  <div class="section-head">
-    <span class="kicker">06 · The toolkit</span>
-    <h2>Tools I work with.</h2>
-  </div>
+<section id="skills" class="section wrap">
+  <div class="section-heading" data-reveal><p class="eyebrow">06 / The toolkit</p><h2>Tools I can<br><em>put to work.</em></h2></div>
   <div class="notes-grid">
     <div class="note"><h3>Linux &amp; platforms</h3><p>Arch Linux · Ubuntu · Debian · systemd · SSH · Proxmox · cloud-init · Docker · Kubernetes · Helm</p></div>
     <div class="note"><h3>Automation &amp; delivery</h3><p>Terraform · Ansible · Semaphore · Git · Forgejo Actions · container registries · Bash · Python · n8n · APIs</p></div>
@@ -283,14 +237,8 @@
   </div>
 </section>
 
-<section id="certs" class="section">
-  <span class="vlabel" aria-hidden="true">Background</span>
-  <div class="section-head">
-    <span class="kicker">07 · Background</span>
-    <h2>Education &amp; continued learning.</h2>
-    <p class="lede">I keep developing my skills through projects, security labs and
-    mentorship from working developers and DevOps engineers.</p>
-  </div>
+<section id="certs" class="section wrap education-layout">
+  <div class="section-heading" data-reveal><p class="eyebrow">07 / Background</p><h2>Keep building.<br><em>Keep learning.</em></h2><p>Projects, security labs and mentorship from working developers and DevOps engineers keep me moving.</p></div>
   <ul class="cert-list">
     <li><strong>Bachelor of Information Technology</strong><span>2024</span></li>
     <li><strong>Advanced Diploma of IT</strong><span>2020</span></li>
@@ -301,25 +249,11 @@
   </ul>
 </section>
 
-<section id="contact" class="section section-contact">
-  <div class="contact-card">
-    <span class="kicker">08 · Get in touch</span>
-    <h2>Let's put these skills to work.</h2>
-    <p>Open to IT support, systems and junior infrastructure opportunities in Australia,
-    with a focus on growing into DevOps and automation. I bring practical technical
-    skills, a troubleshooting mindset and experience helping people.</p>
-    <div class="hero-links">
-      <a class="btn btn-solid" href="mailto:jobs@prashantghimire.dev">jobs@prashantghimire.dev</a>
-      <a class="btn" href="https://github.com/ghimireaacs" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="https://linkedin.com/in/prashant-ghimire" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </div>
+<section id="contact" class="contact-section">
+  <div class="wrap"><p class="eyebrow">08 / Your next colleague?</p><div class="contact-layout"><div><h2>Let's put it<br><em>to work.</em></h2><p>Open to IT support, systems and junior infrastructure opportunities in Australia, with a focus on DevOps and automation.</p></div><a class="contact-arrow" href="mailto:jobs@prashantghimire.dev" aria-label="Email Prashant Ghimire">↗</a></div><div class="contact-links"><a href="mailto:jobs@prashantghimire.dev">jobs@prashantghimire.dev <span aria-hidden="true">↗</span></a><div><a href="https://github.com/ghimireaacs" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a><a href="https://linkedin.com/in/prashant-ghimire" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></div></div></div>
 </section>
 </main>
 
-<footer class="footer">
-  <p>Prashant Ghimire · Australia</p>
-  <p class="footer-note">Hand-built with plain HTML and CSS. No JavaScript, no frameworks, no trackers.</p>
-</footer>
+<footer class="footer wrap"><p>Prashant Ghimire <span>/ Australia</span></p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
 </body>
 </html>

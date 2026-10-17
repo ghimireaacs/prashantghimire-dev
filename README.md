@@ -1,20 +1,27 @@
 # prashantghimire.dev
 
-Personal portfolio. Plain HTML and CSS at the repo root — no framework, no build step, no JavaScript, no trackers.
+Professional portfolio built with HTML, CSS and lightweight JavaScript. No framework, build step, external font requests or trackers.
 
-Deployed on Netlify: every push publishes the repo as-is (see `netlify.toml`).
+Deployed on Netlify: each push publishes the repo as-is (see `netlify.toml`).
 
 ## Structure
 
-- `index.html`: introduction, capabilities, selected projects, architecture overview (inline SVG), field notes, experience, skills, education and contact
-- `style.css` — design tokens in `:root` (colors, fonts); change tokens, not scattered values
+- `index.html`: introduction, illustrated projects, capabilities, architecture, expandable field notes, experience, skills, education and contact
+- `style.css`: design tokens, responsive layouts, illustrations and motion
+- `script.js`: motion controls, mobile navigation, section highlighting and entrance animations
 
-## Editing
+## Design
 
-Edit the two files directly and push. To preview locally, open `index.html` in a browser or:
+Oversized typography, a neutral canvas, cobalt color blocks and a luminous lime accent. Project illustrations and the architecture diagram are drawn in HTML/CSS and SVG. Colors and fonts are defined in `style.css` under `:root`.
+
+Motion respects the visitor's reduced-motion preference and can be paused using the navigation control. Content and links remain available without JavaScript; field notes use native HTML disclosures.
+
+## Editing and preview
+
+Keep `index.html`, `style.css` and `script.js` in sync with `../prashantdev/`. Open `index.html` directly or preview locally:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-The previous Hugo + grain-hugo-theme setup was removed in July 2026; it lives in git history if ever needed.
+The previous Hugo setup was removed in July 2026. The graphic redesign uses the same static Netlify deployment.
