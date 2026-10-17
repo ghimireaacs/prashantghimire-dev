@@ -3,249 +3,177 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prashant Ghimire · IT Support & Infrastructure</title>
-<meta name="description" content="IT support and infrastructure with a production homelab (Proxmox, k3s, Wazuh SIEM), an enterprise IT internship, and hands-on Microsoft 365, Active Directory, Windows Server, and networking. Seeking L1 / L2 IT Support and junior security roles in Australia.">
-<meta property="og:title" content="Prashant Ghimire · IT Support & Infrastructure">
-<meta property="og:description" content="Five machines under a desk running what most people rent from Google. When it breaks, I find out why.">
+<title>Prashant Ghimire · Infrastructure, DevOps &amp; IT Support</title>
+<meta name="description" content="Prashant Ghimire, Australia. Infrastructure, DevOps and IT support across Linux, Kubernetes, Docker, Terraform, Ansible and Microsoft 365. Projects, automation and practical troubleshooting.">
+<meta property="og:title" content="Prashant Ghimire · Infrastructure, DevOps &amp; IT Support">
+<meta property="og:description" content="Build, deploy, automate and troubleshoot. Explore my skills, infrastructure projects and field notes.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<nav class="nav">
+<nav class="nav" aria-label="Main navigation">
   <a class="nav-name" href="#top">PG<span class="nav-dot">.</span></a>
   <div class="nav-links">
-    <a href="#lab">Lab</a>
-    <a href="#map">Map</a>
+    <a href="#capabilities">Capabilities</a>
+    <a href="#projects">Projects</a>
     <a href="#notes">Notes</a>
     <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
     <a href="#contact" class="nav-cta">Contact</a>
   </div>
 </nav>
 
-<!-- ============ HERO ============ -->
 <header class="hero" id="top">
   <h1>Prashant <span class="outline">Ghimire</span></h1>
-  <p class="role">IT Support &amp; Infrastructure</p>
+  <p class="role">Infrastructure, DevOps &amp; IT Support</p>
   <p class="loc">Australia</p>
-  <p class="bio">I build and run real systems, then support the people who use them.
-  A production homelab in daily use since 2023 (Proxmox, k3s, a Wazuh SIEM, a segmented
-  OPNsense network) is where I learned infrastructure and blue team work by operating it
-  for real, not by reading about it. The people side came from three years on a busy
-  checkout: stay calm when things break, listen for the actual problem. An enterprise IT
-  internship tied it together across Windows Server, Active Directory, Microsoft 365,
-  and Cisco networking.</p>
-  <div class="stats">
-    <div class="stat"><b>3 yrs</b><span>infrastructure in daily production</span></div>
-    <div class="stat"><b>40+</b><span>services on Kubernetes</span></div>
-    <div class="stat"><b>5</b><span>VLANs behind one firewall</span></div>
-    <div class="stat"><b>AU #24</b><span>Blue Team Labs Online</span></div>
+  <p class="bio">I build, deploy and troubleshoot infrastructure with Linux, Kubernetes,
+  Docker, Terraform and Ansible. My work connects networking, automation, monitoring
+  and security, backed by projects I operate and an enterprise IT internship.
+  I'm comfortable picking up tools, understanding how they fit together and putting them to work.</p>
+  <div class="stats" aria-label="Areas of capability">
+    <div class="stat"><b>Build</b><span>Linux, networks &amp; infrastructure</span></div>
+    <div class="stat"><b>Deploy</b><span>Containers, IaC &amp; delivery</span></div>
+    <div class="stat"><b>Operate</b><span>Monitoring, security &amp; recovery</span></div>
+    <div class="stat"><b>Support</b><span>Microsoft systems &amp; people</span></div>
   </div>
   <div class="hero-links">
-    <a class="btn btn-solid" href="mailto:jobs@prashantghimire.dev">Email me</a>
+    <a class="btn btn-solid" href="#projects">Explore my work</a>
     <a class="btn" href="https://github.com/ghimireaacs" target="_blank" rel="noopener">GitHub</a>
     <a class="btn" href="https://linkedin.com/in/prashant-ghimire" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn" href="https://ashishghimire.com" target="_blank" rel="noopener">Blog</a>
+    <a class="btn" href="mailto:jobs@prashantghimire.dev">Email me</a>
   </div>
 </header>
 
 <main>
-
-<!-- ============ LAB ============ -->
-<section id="lab" class="section">
-  <span class="vlabel" aria-hidden="true">Lab</span>
+<section id="capabilities" class="section">
+  <span class="vlabel" aria-hidden="true">Capability</span>
   <div class="section-head">
-    <span class="kicker">01 · The proof</span>
-    <h2>The Lab</h2>
-    <p class="lede">Five machines under a desk running what most people rent from Google:
-    photos, files, documents, calendars, media, and the network itself. In daily use since
-    2023, with no support contract and nobody to escalate to. When it breaks, I find out why.
-    The whole lab is code: the Kubernetes manifests, Terraform, and Ansible are
-    <a href="https://github.com/ghimireaacs/myhomelab" target="_blank" rel="noopener">public on GitHub</a>.</p>
+    <span class="kicker">01 · What I can do</span>
+    <h2>From setup to troubleshooting.</h2>
+    <p class="lede">I work across the systems behind an application: the host it runs on,
+    the network it uses, how it gets deployed and what happens when it breaks.</p>
   </div>
-
   <div class="card-grid">
-    <article class="card card-wide">
-      <h3>Detection engineering &amp; observability</h3>
-      <p>I write custom Wazuh detection rules mapped to MITRE ATT&amp;CK, fed by my OPNsense
-      firewall over agentless syslog, with CrowdSec adding behavioural detection. Underneath,
-      every host, container, and firewall log flows into one pipeline: Prometheus for metrics,
-      Loki for logs via Promtail, Grafana for dashboards and alerting. The same analysis I
-      practise on Blue Team Labs Online (#24 in Australia), applied to infrastructure I have
-      to keep running.</p>
-      <ul class="chips"><li>Wazuh</li><li>CrowdSec</li><li>OPNsense</li><li>Prometheus</li><li>Grafana</li><li>Loki</li></ul>
-    </article>
-
     <article class="card">
-      <h3>Network segmentation</h3>
-      <p>A 5-VLAN network on OPNsense: per-VLAN firewall policy, 802.1Q trunking on a managed
-      switch, isolated tenant and IoT traffic, and split-horizon DNS through Pi-hole and
-      Cloudflare. Real networking on real hardware, from subnetting decisions down to
-      packet-level troubleshooting.</p>
-      <ul class="chips"><li>OPNsense</li><li>VLANs</li><li>802.1Q</li><li>Pi-hole</li><li>Cloudflare</li></ul>
+      <h3>Infrastructure &amp; containers</h3>
+      <p>Set up Linux hosts, build Proxmox VMs and deploy applications with Docker Compose and Kubernetes. Configure persistent storage, secrets, resource settings and ingress, then work through host and application failures.</p>
+      <ul class="chips"><li>Linux</li><li>Proxmox</li><li>Docker</li><li>Kubernetes</li><li>Helm</li><li>cloud-init</li></ul>
     </article>
-
     <article class="card">
-      <h3>Compute &amp; platform</h3>
-      <p>A two-node Proxmox cluster and a 3-node k3s cluster running 40+ services behind
-      Traefik with automatic TLS. Every workload carries CPU and memory requests and limits
-      sized from live usage metrics, and cloud-init templates provision a fully monitored VM
-      in under five minutes.</p>
-      <ul class="chips"><li>Proxmox</li><li>k3s</li><li>Docker</li><li>Traefik</li><li>cloud-init</li><li>TrueNAS</li></ul>
+      <h3>Automation &amp; delivery</h3>
+      <p>Define infrastructure with Terraform and automate host setup, deployment, patching and backups with Ansible. Build container images, configure CI/CD workflows and publish artifacts. Use Bash, Python and APIs to automate repeated work.</p>
+      <ul class="chips"><li>Terraform</li><li>Ansible</li><li>Forgejo Actions</li><li>Git</li><li>Bash</li><li>Python</li></ul>
     </article>
-
     <article class="card">
-      <h3>Identity &amp; access</h3>
-      <p>Authentik SSO with MFA enforced on every service, SSH keys only, and zero open
-      inbound ports. Remote access goes through zero-trust Twingate and a single Cloudflare
-      Tunnel.</p>
-      <ul class="chips"><li>Authentik</li><li>MFA</li><li>Twingate</li><li>cert-manager</li></ul>
+      <h3>Networking &amp; identity</h3>
+      <p>Configure VLANs, firewall policy, DNS, DHCP and remote access. Route services through Traefik and MetalLB, automate TLS certificates and integrate SSO, OIDC and MFA. Trace connectivity problems from name resolution to the application.</p>
+      <ul class="chips"><li>OPNsense</li><li>Cloudflare</li><li>Traefik</li><li>WireGuard</li><li>Authentik</li><li>cert-manager</li></ul>
     </article>
-
     <article class="card">
-      <h3>Storage &amp; databases</h3>
-      <p>A mirrored ZFS pool serves NFS to the whole lab, with one deliberate exception: a
-      dozen PostgreSQL instances stay on local disk for integrity, with automated nightly
-      dumps for the critical ones. Redis, Meilisearch, and Elasticsearch round out the data
-      layer.</p>
-      <ul class="chips"><li>ZFS</li><li>NFS</li><li>PostgreSQL</li><li>Redis</li><li>Meilisearch</li></ul>
+      <h3>Monitoring &amp; security</h3>
+      <p>Collect metrics and logs, build dashboards and configure alerts. Investigate Wazuh detections, write firewall correlation rules mapped to MITRE ATT&amp;CK and use packet captures to understand traffic.</p>
+      <ul class="chips"><li>Prometheus</li><li>Grafana</li><li>Loki</li><li>Wazuh</li><li>CrowdSec</li><li>Wireshark</li></ul>
+    </article>
+    <article class="card">
+      <h3>Storage &amp; recovery</h3>
+      <p>Work with TrueNAS, ZFS and NFS alongside local database storage. Back up databases and application state, encrypt cluster backups and document the steps needed to restore services.</p>
+      <ul class="chips"><li>TrueNAS</li><li>ZFS</li><li>NFS</li><li>PostgreSQL</li><li>SQLite</li><li>Backups</li></ul>
+    </article>
+    <article class="card">
+      <h3>Microsoft &amp; IT support</h3>
+      <p>Administer Microsoft 365, Active Directory and Windows Server. Manage users, mailboxes, permissions and device enrolment. Troubleshoot Windows and connectivity issues, explain the fix and document the outcome.</p>
+      <ul class="chips"><li>Microsoft 365</li><li>Active Directory</li><li>Entra ID</li><li>Intune</li><li>Exchange Online</li><li>PowerShell</li></ul>
     </article>
   </div>
 </section>
 
-<!-- ============ MAP ============ -->
-<section id="map" class="section">
-  <span class="vlabel" aria-hidden="true">Territory</span>
+<section id="projects" class="section">
+  <span class="vlabel" aria-hidden="true">Projects</span>
   <div class="section-head">
-    <span class="kicker">02 · The territory</span>
-    <h2>The Map</h2>
-    <p class="lede">The lab as it actually runs: one firewall in front of everything, five
-    VLANs behind it, two hypervisors, three Kubernetes nodes, and a SIEM reading the
-    firewall's diary. Redrawn from the real topology, minus the parts you should never
-    publish.</p>
+    <span class="kicker">02 · Selected work</span>
+    <h2>Code you can explore.</h2>
+    <p class="lede">Infrastructure configurations, a small application and a reusable theme.
+    Each project puts a different part of my toolkit to work.</p>
   </div>
+  <div class="card-grid">
+    <article class="card">
+      <h3><a href="https://github.com/ghimireaacs/myhomelab" target="_blank" rel="noopener">myhomelab</a></h3>
+      <p>Kubernetes manifests, Docker Compose stacks, Terraform modules and Ansible
+      playbooks for infrastructure I operate. Reusable configurations for others to adapt.
+      Services change as I experiment; the repository captures work across that journey.</p>
+      <ul class="chips"><li>Infrastructure</li><li>Automation</li><li>Operations</li></ul>
+    </article>
+    <article class="card">
+      <h3><a href="https://github.com/ghimireaacs/codeshuttle" target="_blank" rel="noopener">CodeShuttle</a></h3>
+      <p>A Flask and SQLite application for sharing snippets, logs and files.
+      Containerized and packaged through GHCR, with persistent storage and a
+      straightforward Docker deployment.</p>
+      <ul class="chips"><li>Python</li><li>Flask</li><li>SQLite</li><li>Docker</li></ul>
+    </article>
+    <article class="card">
+      <h3><a href="https://github.com/ghimireaacs/grain-hugo-theme" target="_blank" rel="noopener">grain-hugo-theme</a></h3>
+      <p>A reusable Hugo portfolio theme with content driven by configuration and data
+      files. Responsive layouts, a print stylesheet and an example site make it
+      adaptable to another person's portfolio.</p>
+      <ul class="chips"><li>Hugo</li><li>HTML</li><li>CSS</li><li>YAML</li></ul>
+    </article>
+  </div>
+</section>
 
+<section id="map" class="section">
+  <span class="vlabel" aria-hidden="true">Systems</span>
+  <div class="section-head">
+    <span class="kicker">03 · Architecture</span>
+    <h2>How the pieces connect.</h2>
+    <p class="lede">A simplified view of my homelab: network access, two application
+    platforms, and the storage and operating tools that support them.
+    The implementation evolves as I try tools and move workloads.</p>
+  </div>
   <figure class="map-sheet">
-    <svg viewBox="0 0 960 740" role="img" aria-label="Hand-drawn network map of the homelab: internet feeds an OPNsense firewall, then a managed switch fans out to five VLANs; the server VLAN holds two Proxmox hosts, TrueNAS, a Wazuh SIEM, Pi-hole, and a three-node k3s cluster watched by Grafana, Prometheus, and Loki.">
-
-      <!-- internet -->
-      <rect class="m-box" x="410" y="28" width="140" height="46" rx="23"/>
-      <text class="m-label" x="480" y="56">INTERNET</text>
-      <text class="m-note" x="255" y="56" text-anchor="end">everything out here is noise</text>
-
-      <!-- me, outside -->
-      <rect class="m-box" x="762" y="30" width="148" height="44" rx="22"/>
-      <text class="m-label" x="836" y="50">ME, OUTSIDE</text>
-      <text class="m-sub" x="836" y="64">usually at work</text>
-
-      <!-- internet -> firewall -->
-      <line class="m-line" x1="465" y1="74" x2="465" y2="150"/>
-      <path class="m-dash" d="M 495 150 L 495 74"/>
-      <text class="m-note" x="450" y="112" text-anchor="end">inbound ports open: zero</text>
-      <text class="m-note" x="510" y="112">one Cloudflare tunnel, outbound only</text>
-
-      <!-- twingate -->
-      <path class="m-dash" d="M 836 74 C 836 140, 700 176, 572 176"/>
-      <text class="m-note" x="768" y="156">zero-trust Twingate</text>
-
-      <!-- firewall -->
-      <rect class="m-box-hi" x="390" y="150" width="180" height="56" rx="6"/>
-      <text class="m-label" x="480" y="174">OPNSENSE</text>
-      <text class="m-sub" x="480" y="190">firewall · the only door</text>
-
-      <!-- firewall -> switch -->
-      <line class="m-line" x1="480" y1="206" x2="480" y2="250"/>
-
-      <!-- switch -->
-      <rect class="m-box" x="370" y="250" width="220" height="52" rx="6"/>
-      <text class="m-label" x="480" y="272">MANAGED SWITCH</text>
-      <text class="m-sub" x="480" y="288">802.1Q trunk</text>
-
-      <!-- vlan fan -->
-      <line class="m-line" x1="440" y1="302" x2="150" y2="344"/>
-      <line class="m-line" x1="460" y1="302" x2="315" y2="344"/>
-      <line class="m-line" x1="480" y1="302" x2="480" y2="400"/>
-      <line class="m-line" x1="500" y1="302" x2="645" y2="344"/>
-      <line class="m-line" x1="520" y1="302" x2="810" y2="344"/>
-
-      <rect class="m-box" x="90"  y="344" width="120" height="36" rx="6"/>
-      <text class="m-label" x="150" y="366">PERSONAL</text>
-      <rect class="m-box" x="255" y="344" width="120" height="36" rx="6"/>
-      <text class="m-label" x="315" y="366">TENANT</text>
-      <rect class="m-box" x="585" y="344" width="120" height="36" rx="6"/>
-      <text class="m-label" x="645" y="366">IOT</text>
-      <rect class="m-box" x="750" y="344" width="120" height="36" rx="6"/>
-      <text class="m-label" x="810" y="366">WORKSTATION</text>
-      <text class="m-note" x="585" y="398">the light bulbs can't see the servers</text>
-
-      <!-- server vlan zone -->
-      <rect class="m-zone" x="60" y="410" width="840" height="310" rx="10"/>
-      <text class="m-tag" x="84" y="437">SERVER VLAN</text>
-      <text class="m-note" x="898" y="437" text-anchor="end">where everything actually lives</text>
-
-      <!-- row A -->
-      <rect class="m-box" x="90" y="456" width="150" height="52" rx="6"/>
-      <text class="m-label" x="165" y="478">HOMESERVER</text>
-      <text class="m-sub" x="165" y="494">Proxmox</text>
-
-      <rect class="m-box" x="260" y="456" width="150" height="52" rx="6"/>
-      <text class="m-label" x="335" y="478">HOMESERVERTOO</text>
-      <text class="m-sub" x="335" y="494">Proxmox</text>
-
-      <rect class="m-box" x="430" y="456" width="150" height="52" rx="6"/>
-      <text class="m-label" x="505" y="478">TRUENAS</text>
-      <text class="m-sub" x="505" y="494">ZFS mirror · NFS</text>
-
-      <rect class="m-box" x="600" y="456" width="150" height="52" rx="6"/>
-      <text class="m-label" x="675" y="478">WAZUH SIEM</text>
-      <text class="m-sub" x="675" y="494">custom rules · MITRE</text>
-
-      <rect class="m-box" x="770" y="456" width="110" height="52" rx="6"/>
-      <text class="m-label" x="825" y="478">PI-HOLE</text>
-      <text class="m-sub" x="825" y="494">ads die here</text>
-
-      <!-- firewall syslog -> wazuh -->
-      <path class="m-dash" d="M 570 184 C 780 210, 690 350, 678 456"/>
-      <text class="m-note m-note-hi" x="712" y="300">firewall syslog, every packet verdict</text>
-
-      <!-- VMs: proxmox -> k3s workers -->
-      <path class="m-line" d="M 165 508 C 165 552, 335 552, 335 596" opacity=".55"/>
-      <path class="m-line" d="M 335 508 C 335 550, 505 548, 505 596" opacity=".55"/>
-
-      <!-- row B: k3s -->
-      <text class="m-tag" x="90" y="584">K3S CLUSTER · 40+ SERVICES BEHIND TRAEFIK</text>
-      <rect class="m-box" x="90" y="596" width="150" height="52" rx="6"/>
-      <text class="m-label" x="165" y="618">KUBER</text>
-      <text class="m-sub" x="165" y="634">control plane</text>
-      <line class="m-line" x1="240" y1="622" x2="260" y2="622"/>
-      <rect class="m-box" x="260" y="596" width="150" height="52" rx="6"/>
-      <text class="m-label" x="335" y="618">KUBERONE</text>
-      <text class="m-sub" x="335" y="634">worker</text>
-      <line class="m-line" x1="410" y1="622" x2="430" y2="622"/>
-      <rect class="m-box" x="430" y="596" width="150" height="52" rx="6"/>
-      <text class="m-label" x="505" y="618">KUBERTWO</text>
-      <text class="m-sub" x="505" y="634">worker</text>
-      <text class="m-note" x="90" y="678">the control plane is a 2012 MacBook Pro that refuses to die</text>
-
-      <!-- watchtower -->
-      <rect class="m-box" x="640" y="596" width="240" height="52" rx="6"/>
-      <text class="m-label" x="760" y="618" style="font-size:11px">GRAFANA · PROMETHEUS · LOKI</text>
-      <text class="m-sub" x="760" y="634">the watchtower</text>
-      <path class="m-dot" d="M 700 596 L 675 508"/>
-      <path class="m-dot" d="M 660 596 C 600 560, 540 540, 512 508"/>
-      <path class="m-dot" d="M 640 622 L 580 622"/>
-      <path class="m-dot" d="M 800 596 C 850 420, 700 260, 592 196"/>
-      <text class="m-note" x="640" y="678">every metric and log ends up here</text>
+    <svg viewBox="0 0 960 540" role="img" aria-labelledby="map-title map-desc">
+      <title id="map-title">Homelab architecture overview</title>
+      <desc id="map-desc">OPNsense and a managed switch connect the network to Docker
+      hosts on Proxmox and a k3s cluster. Traefik routes application traffic and
+      cert-manager handles TLS. Supporting systems provide storage, monitoring and
+      security. Terraform, Ansible and Forgejo support provisioning, operations and builds.
+      Connections show relationships rather than individual cable routes.</desc>
+      <rect class="m-box-hi" x="270" y="20" width="420" height="70" rx="6"/>
+      <text class="m-label" x="480" y="48">NETWORK &amp; ACCESS</text>
+      <text class="m-sub" x="480" y="70">OPNsense · VLANs · DNS · remote access</text>
+      <path class="m-line" d="M 480 90 V 118 H 250 V 150 M 480 118 H 710 V 150"/>
+      <rect class="m-box" x="50" y="150" width="400" height="100" rx="6"/>
+      <text class="m-label" x="250" y="182">PROXMOX &amp; DOCKER</text>
+      <text class="m-sub" x="250" y="205">Virtual machines · cloud-init · Compose</text>
+      <text class="m-sub" x="250" y="226">Application services &amp; GPU workloads</text>
+      <rect class="m-box" x="510" y="150" width="400" height="100" rx="6"/>
+      <text class="m-label" x="710" y="182">KUBERNETES &amp; INGRESS</text>
+      <text class="m-sub" x="710" y="205">k3s · Helm · Traefik · MetalLB</text>
+      <text class="m-sub" x="710" y="226">Workloads · persistent volumes · TLS</text>
+      <path class="m-dot" d="M 250 250 V 280 H 710 V 250 M 180 280 V 310 M 480 280 V 310 M 780 310 V 280 H 710"/>
+      <rect class="m-box" x="50" y="310" width="260" height="92" rx="6"/>
+      <text class="m-label" x="180" y="340">STORAGE</text>
+      <text class="m-sub" x="180" y="362">TrueNAS · ZFS · NFS</text>
+      <text class="m-sub" x="180" y="382">Local database storage</text>
+      <rect class="m-box" x="350" y="310" width="260" height="92" rx="6"/>
+      <text class="m-label" x="480" y="340">OBSERVABILITY</text>
+      <text class="m-sub" x="480" y="362">Prometheus · Grafana · Loki</text>
+      <text class="m-sub" x="480" y="382">Metrics · logs · alerts</text>
+      <rect class="m-box" x="650" y="310" width="260" height="92" rx="6"/>
+      <text class="m-label" x="780" y="340">IDENTITY &amp; SECURITY</text>
+      <text class="m-sub" x="780" y="362">Authentik · Wazuh · CrowdSec</text>
+      <text class="m-sub" x="780" y="382">Access · detection · investigation</text>
+      <rect class="m-box-hi" x="50" y="444" width="860" height="72" rx="6"/>
+      <text class="m-label" x="480" y="473">PROVISION · CONFIGURE · BUILD · MAINTAIN</text>
+      <text class="m-sub" x="480" y="496">Terraform · Ansible · Forgejo Actions · scripts &amp; runbooks</text>
     </svg>
-    <figcaption class="map-caption">Drawn from the running network. Addresses redacted, obviously.</figcaption>
+    <figcaption class="map-caption">Logical architecture. Detailed configurations live in
+    <a href="https://github.com/ghimireaacs/myhomelab" target="_blank" rel="noopener">myhomelab</a>.</figcaption>
   </figure>
 </section>
 
-<!-- ============ FIELD NOTES ============ -->
 <section id="notes" class="section">
   <span class="vlabel" aria-hidden="true">Notes</span>
   <div class="section-head">
-    <span class="kicker">03 · Field notes</span>
+    <span class="kicker">04 · Field notes</span>
     <h2>Things that broke</h2>
     <p class="lede">Troubleshooting is the job. Three incidents from the lab, exactly as they
     happened: what broke, how I chased it, and what changed.</p>
@@ -259,8 +187,7 @@
       binary against the package database (clean), then read the signature itself: the legacy
       trojan check greps binaries for strings like "bash" and "/dev/". Ubuntu 25.10 ships the
       Rust rewrite of coreutils, one multicall binary with exactly those strings embedded.
-      False positive. Tuned the check for that host and documented that every future 25.10
-      agent will trip it.</p>
+      False positive. Tuned the check for that host and documented the signature mismatch.</p>
       <ul class="chips"><li>Wazuh</li><li>rootcheck</li><li>Ubuntu 25.10</li></ul>
     </article>
 
@@ -289,11 +216,10 @@
   </div>
 </section>
 
-<!-- ============ EXPERIENCE ============ -->
 <section id="experience" class="section">
   <span class="vlabel" aria-hidden="true">Record</span>
   <div class="section-head">
-    <span class="kicker">04 · The record</span>
+    <span class="kicker">05 · The record</span>
     <h2>Experience</h2>
   </div>
 
@@ -315,15 +241,14 @@
     <article class="entry">
       <div class="entry-when">Jan 2023 - Present</div>
       <div class="entry-body card">
-        <h3>Infrastructure Operations · Self-hosted production environment</h3>
+        <h3>Infrastructure &amp; Automation · Personal projects</h3>
         <ul>
-          <li>Sole operator of a production environment running daily since 2023: capacity planning, incident response, backups, and security monitoring with nobody to escalate to</li>
-          <li>Wrote custom Wazuh detection rules for OPNsense firewall telemetry over agentless syslog, mapped to MITRE ATT&amp;CK (T1046 port-scan escalation)</li>
-          <li>Designed and built a 5-VLAN segmented network on OPNsense with per-VLAN firewall rules isolating server, personal, tenant, IoT, and workstation traffic</li>
-          <li>Administered a 2-node Proxmox cluster running Windows and Linux VMs with cloud-init automated provisioning</li>
-          <li>Deployed 40+ self-hosted services on a 3-node K3s cluster with NFS storage, Traefik ingress, SSL certificates, and SSO via Authentik, all resource-governed from live usage metrics</li>
-          <li>Configured Twingate zero-trust remote access, Pi-hole DNS filtering, and centralised monitoring (Prometheus, Grafana, Loki)</li>
-          <li>Practise defensive security on Blue Team Labs Online: Junior Defender rank, #24 in Australia, 32 investigations across incident response and forensics</li>
+          <li>Build and operate Linux infrastructure across Proxmox, Kubernetes and Docker for services used every day</li>
+          <li>Develop Terraform configurations and Ansible workflows for provisioning, host setup, deployment, updates and backups</li>
+          <li>Build container images and configure Forgejo Actions workflows for automated builds and registry publication</li>
+          <li>Configure network segmentation, DNS, ingress, automated TLS and identity integrations</li>
+          <li>Investigate service failures with metrics and logs; write Wazuh detection rules for firewall telemetry mapped to MITRE ATT&amp;CK</li>
+          <li>Document deployment and recovery procedures, including database and encrypted cluster backups</li>
         </ul>
       </div>
     </article>
@@ -342,50 +267,47 @@
   </div>
 </section>
 
-<!-- ============ SKILLS ============ -->
 <section id="skills" class="section">
   <span class="vlabel" aria-hidden="true">Toolkit</span>
   <div class="section-head">
-    <span class="kicker">05 · The toolkit</span>
-    <h2>Skills</h2>
+    <span class="kicker">06 · The toolkit</span>
+    <h2>Tools I work with.</h2>
   </div>
-
   <div class="notes-grid">
-    <div class="note"><h4>Windows &amp; Desktop</h4><p>Windows 10/11 · Windows Server · BSOD &amp; driver troubleshooting · printer support · RDP / Quick Assist · OS imaging</p></div>
-    <div class="note"><h4>Microsoft Cloud</h4><p>Microsoft 365 · Exchange Online · Intune / MDM · Entra ID · MFA · Conditional Access · Teams · SharePoint</p></div>
-    <div class="note"><h4>Active Directory</h4><p>AD DS · DNS · DHCP · Group Policy · NTFS permissions · onboarding &amp; offboarding</p></div>
-    <div class="note"><h4>Networking</h4><p>TCP/IP · VLANs &amp; 802.1Q · OPNsense firewall · DNS / DHCP · VPN (WireGuard, Twingate) · Cisco IOS</p></div>
-    <div class="note"><h4>Linux &amp; Infra</h4><p>Ubuntu Server · SSH · Docker · Kubernetes (k3s) · Proxmox VE · TrueNAS / ZFS · Terraform · Ansible</p></div>
-    <div class="note"><h4>Security</h4><p>Wazuh SIEM (custom detection rules, MITRE ATT&amp;CK) · CrowdSec · BTLO Junior Defender (AU #24) · log analysis · incident response labs · network segmentation · SSO / MFA · TLS / PKI</p></div>
-    <div class="note"><h4>Scripting &amp; ITSM</h4><p>PowerShell · Bash · Git · ITIL fundamentals · ticketing &amp; documentation</p></div>
+    <div class="note"><h3>Linux &amp; platforms</h3><p>Arch Linux · Ubuntu · Debian · systemd · SSH · Proxmox · cloud-init · Docker · Kubernetes · Helm</p></div>
+    <div class="note"><h3>Automation &amp; delivery</h3><p>Terraform · Ansible · Semaphore · Git · Forgejo Actions · container registries · Bash · Python · n8n · APIs</p></div>
+    <div class="note"><h3>Networking &amp; access</h3><p>TCP/IP · VLANs · Cisco IOS · OPNsense · DNS / DHCP · Cloudflare · Traefik · MetalLB · WireGuard · Twingate · Authentik</p></div>
+    <div class="note"><h3>Observability &amp; security</h3><p>Prometheus · Grafana · Loki · Wazuh · CrowdSec · Wireshark · Nmap · Volatility · Autopsy · MITRE ATT&amp;CK</p></div>
+    <div class="note"><h3>Storage &amp; data</h3><p>TrueNAS · ZFS · NFS · Samba · PostgreSQL · SQLite · backup automation · recovery runbooks</p></div>
+    <div class="note"><h3>Microsoft &amp; support</h3><p>Microsoft 365 · AD DS · Windows Server · Entra ID · Intune · Exchange Online · Azure · PowerShell · Windows troubleshooting · ITIL fundamentals</p></div>
   </div>
 </section>
 
-<!-- ============ CERTS ============ -->
 <section id="certs" class="section">
-  <span class="vlabel" aria-hidden="true">Paper</span>
+  <span class="vlabel" aria-hidden="true">Background</span>
   <div class="section-head">
-    <span class="kicker">06 · On paper</span>
-    <h2>Certifications &amp; Education</h2>
+    <span class="kicker">07 · Background</span>
+    <h2>Education &amp; continued learning.</h2>
+    <p class="lede">I keep developing my skills through projects, security labs and
+    mentorship from working developers and DevOps engineers.</p>
   </div>
-
   <ul class="cert-list">
-    <li><strong>Blue Team Labs Online · Junior Defender</strong><span>AU #24 · Global #431</span></li>
-    <li><strong>Junior Penetration Tester</strong><span>TryHackMe</span></li>
-    <li><strong>Microsoft Azure Fundamentals (AZ-900)</strong><span>In progress</span></li>
-    <li><strong>ITIL 4 Foundation Course</strong><span>LinkedIn Learning</span></li>
-    <li><strong>Cisco CCNA</strong><span>Training completed</span></li>
     <li><strong>Bachelor of Information Technology</strong><span>2024</span></li>
     <li><strong>Advanced Diploma of IT</strong><span>2020</span></li>
+    <li><strong>Cisco CCNA</strong><span>Training completed</span></li>
+    <li><strong>ITIL 4 Course</strong><span>LinkedIn Learning</span></li>
+    <li><strong>Junior Penetration Tester</strong><span>TryHackMe</span></li>
+    <li><strong><a href="https://blueteamlabs.online/public/user/aacs" target="_blank" rel="noopener">BTLO Junior Defender</a></strong><span>Blue-team investigations</span></li>
   </ul>
 </section>
 
-<!-- ============ CONTACT ============ -->
 <section id="contact" class="section section-contact">
   <div class="contact-card">
-    <span class="kicker">07 · Say hello</span>
-    <h2>Something broken?<br>I want to know why.</h2>
-    <p>Looking for L1 / L2 IT support, help desk, service desk, or junior security roles anywhere in Australia.</p>
+    <span class="kicker">08 · Get in touch</span>
+    <h2>Let's put these skills to work.</h2>
+    <p>Open to IT support, systems and junior infrastructure opportunities in Australia,
+    with a focus on growing into DevOps and automation. I bring practical technical
+    skills, a troubleshooting mindset and experience helping people.</p>
     <div class="hero-links">
       <a class="btn btn-solid" href="mailto:jobs@prashantghimire.dev">jobs@prashantghimire.dev</a>
       <a class="btn" href="https://github.com/ghimireaacs" target="_blank" rel="noopener">GitHub</a>
@@ -393,12 +315,11 @@
     </div>
   </div>
 </section>
-
 </main>
 
 <footer class="footer">
   <p>Prashant Ghimire · Australia</p>
+  <p class="footer-note">Hand-built with plain HTML and CSS. No JavaScript, no frameworks, no trackers.</p>
 </footer>
-
 </body>
 </html>

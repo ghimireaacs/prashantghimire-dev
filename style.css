@@ -35,6 +35,9 @@
 
 * { box-sizing: border-box; margin: 0; }
 html { scroll-behavior: smooth; }
+a { color: var(--primary); text-underline-offset: .2em; }
+a:hover { color: var(--primary-hover); }
+a:focus-visible { outline: 2px solid var(--primary); outline-offset: 4px; }
 
 body {
   background: var(--background);
@@ -123,7 +126,7 @@ body {
 .btn-solid:hover { background: var(--primary-hover); border-color: var(--primary-hover); color: #fff; }
 
 /* ---------- sections ---------- */
-.section { max-width: 1060px; margin: 0 auto; padding: clamp(3rem, 7vw, 5.5rem) 1.5rem; position: relative; }
+.section { max-width: 1060px; margin: 0 auto; padding: clamp(3rem, 7vw, 5.5rem) 1.5rem; position: relative; scroll-margin-top: 4rem; }
 
 /* vertical outlined section label, Verge-style, wide screens only */
 .vlabel {
@@ -168,7 +171,7 @@ h2 {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 1.2rem;
 }
 .card-wide { grid-column: span 2; }
@@ -234,7 +237,7 @@ h2 {
 /* ---------- skill notes ---------- */
 .notes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 1.2rem;
 }
 .note {
@@ -244,7 +247,7 @@ h2 {
   padding: 1.15rem 1.3rem;
   box-shadow: var(--shadow-card);
 }
-.note h4 {
+.note h3 {
   font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
   color: var(--text-secondary); margin-bottom: .45rem;
 }
@@ -253,7 +256,7 @@ h2 {
 /* ---------- certs ---------- */
 .cert-list { list-style: none; padding: 0; max-width: 680px; }
 .cert-list li {
-  display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; align-items: baseline;
   padding: .8rem 0;
   border-bottom: 1px solid var(--border);
 }

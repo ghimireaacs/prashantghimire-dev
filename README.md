@@ -6,7 +6,7 @@ Deployed on Netlify: every push publishes the repo as-is (see `netlify.toml`).
 
 ## Structure
 
-- `index.html` — the whole site: hero, lab, network map (inline SVG), field notes, experience, skills, certifications, contact
+- `index.html`: introduction, capabilities, selected projects, architecture overview (inline SVG), field notes, experience, skills, education and contact
 - `style.css` — design tokens in `:root` (colors, fonts); change tokens, not scattered values
 
 ## Editing
