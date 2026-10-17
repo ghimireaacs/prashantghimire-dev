@@ -6,15 +6,15 @@ Deployed on Netlify: each push publishes the repo as-is (see `netlify.toml`).
 
 ## Structure
 
-- `index.html`: introduction, illustrated projects, capabilities, architecture, expandable field notes, experience, skills, education and contact
+- `index.html`: personal introduction, illustrated projects, capabilities, expandable architecture and toolkit, field notes, experience, education and contact
 - `style.css`: design tokens, responsive layouts, illustrations and motion
 - `script.js`: motion controls, mobile navigation, section highlighting and entrance animations
 
 ## Design
 
-Oversized typography, a neutral canvas, cobalt color blocks and a luminous lime accent. Project illustrations and the architecture diagram are drawn in HTML/CSS and SVG. Colors and fonts are defined in `style.css` under `:root`.
+A professional portfolio with a friendly, personal voice. The name and capabilities lead; a short personal note adds curiosity, DIY interests and enthusiasm for technology. Restrained cobalt, a luminous lime accent and technical illustrations keep the visual character without an agency-style presentation. Colors and fonts are defined in `style.css` under `:root`.
 
-Motion respects the visitor's reduced-motion preference and can be paused using the navigation control. Content and links remain available without JavaScript; field notes use native HTML disclosures.
+Motion respects the visitor's reduced-motion preference and can be paused using the navigation control. Content and links remain available without JavaScript. The architecture, full toolkit and field notes use native HTML disclosures.
 
 ## Editing and preview
 
